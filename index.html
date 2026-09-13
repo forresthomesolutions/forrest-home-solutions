@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Forrest Home Solutions | Southwest Florida</title>
+
+  <meta name="description" content="Forrest Home Solutions provides painting, remodeling, cabinet refinishing, flooring, drywall, tile and home improvement services throughout Southwest Florida.">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #17263c;
+      background: #ffffff;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #063d70, #078cd6);
+      color: white;
+      padding: 18px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      font-size: 25px;
+      font-weight: 900;
+      letter-spacing: 1px;
+    }
+
+    .phone {
+      color: white;
+      font-size: 22px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .hero {
+      min-height: 560px;
+      background:
+        linear-gradient(rgba(0,40,75,.72), rgba(0,90,145,.65)),
+        url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1800&q=85');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .hero-content {
+      max-width: 900px;
+    }
+
+    .hero h1 {
+      font-size: 54px;
+      line-height: 1.05;
+      margin-bottom: 18px;
+    }
+
+    .hero p {
+      font-size: 23px;
+      margin-bottom: 28px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #ffffff;
+      color: #066ba8;
+      padding: 15px 28px;
+      border-radius: 8px;
+      font-weight: 800;
+      text-decoration: none;
+      margin: 7px;
+      font-size: 18px;
+    }
+
+    .btn-blue {
+      background: #078cd6;
+      color: white;
+    }
+
+    section {
+      padding: 70px 7%;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 38px;
+      margin-bottom: 12px;
+      color: #075e9b;
+    }
+
+    .subtitle {
+      text-align: center;
+      max-width: 760px;
+      margin: 0 auto 40px;
+      color: #536273;
+      font-size: 18px;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .service {
+      padding: 28px 20px;
+      border-radius: 12px;
+      background: #f5f9fc;
+      border: 1px solid #dce9f2;
+      text-align: center;
+    }
+
+    .service h3 {
+      color: #076ca9;
+      margin-bottom: 8px;
+      font-size: 21px;
+    }
+
+    .about {
+      background: #f5f9fc;
+      text-align: center;
+    }
+
+    .about p {
+      max-width: 850px;
+      margin: auto;
+      font-size: 19px;
+    }
+
+    .estimate {
+      text-align: center;
+      background: linear-gradient(135deg, #064b80, #0794d8);
+      color: white;
+    }
+
+    .estimate h2 {
+      font-size: 40px;
+      margin-bottom: 12px;
+    }
+
+    .estimate p {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    .big-number {
+      display: block;
+      color: white;
+      font-size: 38px;
+      font-weight: 900;
+      text-decoration: none;
+      margin: 15px 0 22px;
+    }
+
+    footer {
+      background: #10243a;
+      color: white;
+      text-align: center;
+      padding: 30px 15px;
+    }
+
+    footer a {
+      color: #70c9ff;
+      text-decoration: none;
+    }
+
+    @media (max-width: 650px) {
+      header {
+        justify-content: center;
+        text-align: center;
+        gap: 8px;
+      }
+
+      .brand, .phone {
+        width: 100%;
+      }
+
+      .hero {
+        min-height: 500px;
+      }
+
+      .hero h1 {
+        font-size: 38px;
+      }
+
+      .hero p {
+        font-size: 19px;
+      }
+
+      .section-title {
+        font-size: 31px;
+      }
+
+      .big-number {
+        font-size: 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="brand">FORREST HOME SOLUTIONS</div>
+  <a class="phone" href="tel:9418791796">941-879-1796</a>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Quality Home Improvements Done Right</h1>
+
+    <p>
+      Painting • Remodeling • Cabinet Refinishing • Flooring • Tile • Drywall
+    </p>
+
+    <a class="btn" href="tel:9418791796">Call for a Free Estimate</a>
+    <a class="btn btn-blue" href="#services">View Our Services</a>
+  </div>
+</section>
+
+<section id="services">
+  <h2 class="section-title">Our Services</h2>
+
+  <p class="subtitle">
+    Professional home improvement and remodeling services for homeowners throughout Southwest Florida.
+  </p>
+
+  <div class="services">
+
+    <div class="service">
+      <h3>Interior & Exterior Painting</h3>
+      <p>Professional preparation and high-quality finishes for your home.</p>
+    </div>
+
+    <div class="service">
+      <h3>Cabinet Refinishing</h3>
+      <p>Transform your kitchen with professionally refinished and painted cabinets.</p>
+    </div>
+
+    <div class="service">
+      <h3>Kitchen & Bathroom Remodeling</h3>
+      <p>Updates, repairs and complete transformations customized to your home.</p>
+    </div>
+
+    <div class="service">
+      <h3>Flooring</h3>
+      <p>Professional LVP and flooring installation with careful preparation and finishing.</p>
+    </div>
+
+    <div class="service">
+      <h3>Tile & Backsplash</h3>
+      <p>Tile installation for showers, backsplashes, walls and other home projects.</p>
+    </div>
+
+    <div class="service">
+      <h3>Drywall & Texture</h3>
+      <p>Drywall installation, repairs, finishing, texture and popcorn ceiling removal.</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="about">
+  <h2 class="section-title">Forrest Home Solutions</h2>
+
+  <p>
+    Forrest Home Solutions is a locally owned and operated home improvement
+    company proudly serving Southwest Florida. We focus on quality workmanship,
+    clear communication and treating every customer's home like it's our own.
+    From a fresh coat of paint to a larger remodeling project, we're here to
+    help bring your vision to life.
+  </p>
+</section>
+
+<section class="estimate">
+  <h2>Ready to Start Your Project?</h2>
+
+  <p>Call today to schedule your free estimate.</p>
+
+  <a class="big-number" href="tel:9418791796">
+    941-879-1796
+  </a>
+
+  <a class="btn" href="tel:9418791796">
+    CALL NOW
+  </a>
+</section>
+
+<footer>
+  <strong>Forrest Home Solutions</strong><br>
+  Proudly Serving Southwest Florida<br><br>
+
+  <a href="tel:9418791796">941-879-1796</a>
+  &nbsp; | &nbsp;
+  <a href="https://www.forresthomesolutions.com">www.forresthomesolutions.com</a>
+
+  <br><br>
+  © 2026 Forrest Home Solutions
+</footer>
+
+</body>
+</html>
