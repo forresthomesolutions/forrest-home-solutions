@@ -49,6 +49,22 @@ footer{text-align:center;padding:25px;background:#080d13;color:#c3d2de;font-size
 .project-videos video{width:100%;height:auto;max-height:560px;display:block;object-fit:contain;background:#000;border-radius:12px}
 .project-videos figcaption{padding:10px 3px;font-size:1.1rem;font-weight:600}
 </style>
+
+<style>
+/* Compact, automatically advancing project gallery */
+.fhs-gallery{max-width:1050px;margin:0 auto;padding:30px 16px 35px;text-align:center;color:#fff}
+.fhs-gallery h2{font-size:clamp(1.5rem,3.5vw,2.3rem);margin:0 0 18px}
+.fhs-gallery-stage{max-width:740px;margin:auto;position:relative;background:#091521;border:1px solid #225174;border-radius:16px;overflow:hidden}
+.fhs-gallery-stage img{display:block;width:100%;height:clamp(220px,42vw,430px);object-fit:contain;cursor:zoom-in}
+.fhs-gallery-btn{position:absolute;top:50%;transform:translateY(-50%);background:#071827c9;border:1px solid #6cd4ff;color:white;border-radius:50%;width:42px;height:42px;font-size:26px;cursor:pointer}
+.fhs-gallery-prev{left:10px}.fhs-gallery-next{right:10px}
+.fhs-gallery-caption{font-size:14px;color:#c9d8e6;margin:9px auto 0}
+#fhs-gallery-modal{border:0;padding:12px;border-radius:12px;background:#091521;max-width:97vw;max-height:96vh}
+#fhs-gallery-modal::backdrop{background:#000e}
+#fhs-gallery-modal img{display:block;max-width:92vw;max-height:84vh;object-fit:contain}
+#fhs-gallery-close{float:right;background:#15699b;color:white;border:0;border-radius:6px;padding:7px 12px;margin-bottom:8px;cursor:pointer}
+@media(prefers-reduced-motion:reduce){.fhs-gallery *{scroll-behavior:auto}}
+</style>
 </head>
 <body id="home">
 <nav class="quick" aria-label="Mobile quick actions"><a href="tel:+19418791796">Call Now</a><a href="mailto:justin@forresthomesolutions.com">Email Us</a><a href="#services">Services</a></nav>
@@ -58,6 +74,16 @@ footer{text-align:center;padding:25px;background:#080d13;color:#c3d2de;font-size
 <a class="hotspot" aria-label="Home" href="#home" style="left:10.6707%;top:0%;width:4.4207%;height:3.9199%"></a><a class="hotspot" aria-label="About" href="#about" style="left:16.5396%;top:0%;width:4.0396%;height:3.9199%"></a><a class="hotspot" aria-label="Services" href="#services" style="left:22.4085%;top:0%;width:5.564%;height:3.9199%"></a><a class="hotspot" aria-label="Project gallery" href="#gallery" style="left:28.9634%;top:0%;width:9.1463%;height:3.9199%"></a><a class="hotspot" aria-label="Reviews" href="#contact" style="left:38.6433%;top:0%;width:5.2591%;height:3.9199%"></a><a class="hotspot" aria-label="Contact" href="#contact" style="left:45.2744%;top:0%;width:5.8689%;height:3.9199%"></a><a class="hotspot" aria-label="Call now" href="tel:+19418791796" style="left:64.0244%;top:0%;width:28.125%;height:3.9199%"></a><a class="hotspot" aria-label="Call now" href="tel:+19418791796" style="left:37.6524%;top:41.3678%;width:23.3994%;height:5.8382%"></a><a class="hotspot" aria-label="Email us" href="mailto:justin@forresthomesolutions.com?subject=Free%20Estimate%20Request" style="left:62.5%;top:41.3678%;width:29.497%;height:5.8382%"></a><a class="hotspot" aria-label="Interior &amp; Exterior Painting" href="#service-1" style="left:1.5244%;top:47.8732%;width:18.3689%;height:10.5088%"></a><a class="hotspot" aria-label="Cabinet Refinishing &amp; Painting" href="#service-2" style="left:20.8079%;top:47.8732%;width:18.5976%;height:10.5088%"></a><a class="hotspot" aria-label="Kitchen &amp; Bath Remodeling" href="#service-3" style="left:40.2439%;top:47.8732%;width:17.6829%;height:10.5088%"></a><a class="hotspot" aria-label="Flooring" href="#service-4" style="left:58.8415%;top:47.8732%;width:18.2927%;height:10.5088%"></a><a class="hotspot" aria-label="Drywall Repair &amp; Texture" href="#service-5" style="left:78.0488%;top:47.8732%;width:18.1402%;height:10.5088%"></a><a class="hotspot" aria-label="Pressure Washing" href="#service-6" style="left:1.5244%;top:59.2994%;width:18.3689%;height:10.8424%"></a><a class="hotspot" aria-label="Fence Staining &amp; Exterior Care" href="#service-7" style="left:20.8079%;top:59.2994%;width:18.5976%;height:10.8424%"></a><a class="hotspot" aria-label="Doors, Trim, Base &amp; Shiplap" href="#service-8" style="left:40.2439%;top:59.2994%;width:17.6829%;height:10.8424%"></a><a class="hotspot" aria-label="Outdoor Kitchens &amp; Backsplash" href="#service-9" style="left:58.8415%;top:59.2994%;width:18.2927%;height:10.8424%"></a><a class="hotspot" aria-label="Handyman Services &amp; Cosmetic Repairs" href="#service-10" style="left:78.0488%;top:59.2994%;width:18.1402%;height:10.8424%"></a>
 </section>
 <section class="homepage-video" aria-label="Project video"><video autoplay muted loop playsinline controls preload="metadata" aria-label="Forrest Home Solutions project video"><source src="homepage-video.mp4" type="video/mp4"></video></section>
+<section class="fhs-gallery" id="gallery" aria-label="Our project photo gallery">
+<h2>Our Work — Project Gallery</h2>
+<div class="fhs-gallery-stage">
+<img id="fhs-gallery-image" alt="Forrest Home Solutions completed project" tabindex="0" loading="eager">
+<button class="fhs-gallery-btn fhs-gallery-prev" id="fhs-gallery-prev" aria-label="Previous photo">‹</button>
+<button class="fhs-gallery-btn fhs-gallery-next" id="fhs-gallery-next" aria-label="Next photo">›</button>
+</div>
+<p class="fhs-gallery-caption" id="fhs-gallery-caption">Tap any photo to enlarge</p>
+</section>
+<dialog id="fhs-gallery-modal"><button id="fhs-gallery-close" aria-label="Close enlarged photo">Close ✕</button><img id="fhs-gallery-large" alt="Enlarged project photo"></dialog>
 <section class="project-videos" id="project-videos"><h2>See Our Work in Action</h2>
 <p>Real projects by Forrest Home Solutions.</p><div class="video-list">
 <figure><video muted loop playsinline controls preload="metadata" src="videos/tile-grout.mp4"></video><figcaption>Tile Regrouting</figcaption></figure>
@@ -69,7 +95,7 @@ footer{text-align:center;padding:25px;background:#080d13;color:#c3d2de;font-size
 <article id="service-1" class="service"><h3>Interior &amp; Exterior Painting</h3><p>Interior and exterior painting, preparation, trim and detailed finishing.</p></article><article id="service-2" class="service"><h3>Cabinet Refinishing &amp; Painting</h3><p>Professional cabinet refinishing and painting for kitchens and baths.</p></article><article id="service-3" class="service"><h3>Kitchen &amp; Bath Remodeling</h3><p>Tile, backsplashes, upgrades and interior transformations.</p></article><article id="service-4" class="service"><h3>Flooring</h3><p>LVP and engineered flooring installation.</p></article><article id="service-5" class="service"><h3>Drywall Repair &amp; Texture</h3><p>Drywall repair, finishing and texture matching.</p></article><article id="service-6" class="service"><h3>Pressure Washing</h3><p>Driveways, walkways, pool decks and exterior surfaces.</p></article><article id="service-7" class="service"><h3>Fence Staining &amp; Exterior Care</h3><p>Fence staining and exterior maintenance.</p></article><article id="service-8" class="service"><h3>Doors, Trim, Base &amp; Shiplap</h3><p>Door installation, trim, baseboards and decorative wall finishes.</p></article><article id="service-9" class="service"><h3>Outdoor Kitchens &amp; Backsplash</h3><p>Outdoor kitchen finishes and backsplash installation.</p></article><article id="service-10" class="service"><h3>Handyman Services &amp; Cosmetic Repairs</h3><p>Repairs, maintenance, punch lists and property turnovers.</p></article>
 </div></section>
 <section id="about" class="about"><h2>About Forrest Home Solutions</h2><p>Hi, I'm Justin. Forrest Home Solutions provides professional painting, remodeling, cabinet refinishing, flooring and handyman services for homeowners, property managers and realtors throughout Sarasota and Southwest Florida.</p><p>Serving Sarasota, Bradenton, Venice, North Port, Port Charlotte and surrounding communities — from Tampa to Fort Myers.</p></section>
-<section id="gallery" class="more"><h2>Our Work</h2><p style="text-align:center;color:#c9d8e6">Explore the project examples featured in our website design. Contact us to discuss your project or request additional photos of our work.</p></section>
+
 <section id="contact" class="contact"><h2>Request a Free Estimate</h2><p>Call or email Forrest Home Solutions to tell us about your project.</p><a class="cta" href="tel:+19418791796">Call (941) 879-1796</a><a class="cta alt" href="mailto:justin@forresthomesolutions.com?subject=Estimate%20Request">justin@forresthomesolutions.com</a></section>
 </main><footer>© 2026 Forrest Home Solutions · Sarasota &amp; Southwest Florida · <a href="https://forresthomesolutions.com">forresthomesolutions.com</a></footer><script>
 (function(){
@@ -85,4 +111,25 @@ e.target.play().catch(()=>{});
 },{threshold:0.55});
 vids.forEach(v=>observer.observe(v));
 })();
-</script></body></html>
+</script>
+<script>
+(function(){
+const photos=["gallery-photos/750697C7-F84B-4F36-BF13-E90BA92F98F4.webp", "gallery-photos/IMG_0013.webp", "gallery-photos/IMG_0157.webp", "gallery-photos/IMG_0194.webp", "gallery-photos/IMG_0272.webp", "gallery-photos/IMG_0465.webp", "gallery-photos/IMG_0467.webp", "gallery-photos/IMG_0470.webp", "gallery-photos/IMG_0471.webp", "gallery-photos/IMG_1111.webp", "gallery-photos/IMG_1114.webp", "gallery-photos/IMG_1417.webp", "gallery-photos/IMG_1421.webp", "gallery-photos/IMG_1685.webp", "gallery-photos/IMG_1696.webp", "gallery-photos/IMG_2107.webp", "gallery-photos/IMG_2117.webp", "gallery-photos/IMG_2395.webp", "gallery-photos/IMG_2699.webp", "gallery-photos/IMG_2998.webp", "gallery-photos/IMG_3500.webp", "gallery-photos/IMG_3502.webp", "gallery-photos/IMG_3515.webp", "gallery-photos/IMG_3523.webp", "gallery-photos/IMG_3525.webp", "gallery-photos/IMG_3832.webp", "gallery-photos/IMG_3833.webp", "gallery-photos/IMG_3835.webp", "gallery-photos/IMG_4068.webp", "gallery-photos/IMG_4069.webp", "gallery-photos/IMG_4070.webp", "gallery-photos/IMG_4073.webp", "gallery-photos/IMG_4074.webp", "gallery-photos/IMG_4177.webp", "gallery-photos/IMG_4179.webp", "gallery-photos/IMG_4207.webp", "gallery-photos/IMG_4217.webp"];
+const img=document.getElementById('fhs-gallery-image'),cap=document.getElementById('fhs-gallery-caption');
+const modal=document.getElementById('fhs-gallery-modal'),large=document.getElementById('fhs-gallery-large');
+let current=0,timer;
+function show(n){current=(n+photos.length)%photos.length;img.src=photos[current];img.alt='Forrest Home Solutions project photo '+(current+1);cap.textContent=(current+1)+' of '+photos.length+' • Click to enlarge';if(modal.open)large.src=img.src;}
+function start(){clearInterval(timer);if(!modal.open&&!window.matchMedia('(prefers-reduced-motion: reduce)').matches)timer=setInterval(()=>show(current+1),4500);}
+function step(delta){show(current+delta);start();}
+function open(){large.src=img.src;modal.showModal();clearInterval(timer);}
+document.getElementById('fhs-gallery-prev').onclick=()=>step(-1);
+document.getElementById('fhs-gallery-next').onclick=()=>step(1);
+document.getElementById('fhs-gallery-close').onclick=()=>modal.close();
+img.onclick=open;img.onkeydown=e=>{if(e.key==='Enter')open();};
+modal.onclick=e=>{if(e.target===modal)modal.close();};
+modal.onclose=start;
+document.addEventListener('keydown',e=>{if(!modal.open)return;if(e.key==='ArrowRight')show(current+1);if(e.key==='ArrowLeft')show(current-1);});
+show(0);start();
+})();
+</script>
+</body></html>
