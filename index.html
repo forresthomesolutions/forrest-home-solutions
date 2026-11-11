@@ -92,6 +92,17 @@ body{padding-bottom:75px}
 .comparison input{position:absolute;z-index:2;bottom:12px;left:10%;width:80%;accent-color:#1ba8f0}
 .comparison .tag{position:absolute;z-index:1;top:12px;background:#031b2ccc;padding:6px 10px;border-radius:5px}
 .comparison .tag.before-tag{left:12px}.comparison .tag.after-tag{right:12px}
+</style><style>
+/* Enlarged, responsive About Forrest Home Solutions section */
+.about-feature{max-width:1250px!important;margin:30px auto!important;padding:32px!important;text-align:left!important;background:linear-gradient(125deg,#102438,#07111c);border:1px solid #276391;border-radius:22px}
+.about-feature-inner{display:grid;grid-template-columns:minmax(230px,0.85fr) minmax(0,1.6fr);align-items:center;gap:36px}
+.about-portrait img{display:block;width:100%;max-height:490px;object-fit:cover;object-position:center top;border-radius:18px}
+.about-info h2{font-size:clamp(1.8rem,3.5vw,3rem);line-height:1.12;margin:0 0 20px}
+.about-info p{font-size:clamp(1.05rem,1.6vw,1.3rem);line-height:1.65}
+.about-contact-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}
+.about-contact-actions a{display:flex;align-items:center;justify-content:center;text-align:center;min-height:66px;margin:0;padding:14px 12px;background:#0875cf;color:white!important;border:1px solid #4ab8ff;border-radius:12px;text-decoration:none;font-size:clamp(1rem,1.6vw,1.2rem);font-weight:800;overflow-wrap:anywhere}
+.about-contact-actions a:hover,.about-contact-actions a:focus-visible{background:#0052a4;outline:2px solid #fff}
+@media(max-width:750px){.about-feature{margin:18px 12px!important;padding:18px!important}.about-feature-inner{grid-template-columns:1fr;gap:18px}.about-portrait img{max-height:300px;object-fit:contain}.about-contact-actions{grid-template-columns:1fr}.about-contact-actions a{min-height:62px;font-size:1.12rem}}
 </style></head>
 <body id="home">
 <nav aria-label="Mobile quick actions" class="quick"><a href="tel:+19418791796">Call Now</a><a href="mailto:justin@forresthomesolutions.com">Email Us</a><a href="#services">Services</a><a href="#gallery">Our Work</a></nav>
@@ -124,7 +135,20 @@ body{padding-bottom:75px}
 <section class="more" id="services"><h2>Our Services</h2><div class="service-grid">
 <article class="service" id="service-1"><h3>Interior &amp; Exterior Painting</h3><p>Interior and exterior painting, preparation, trim and detailed finishing.</p><a class="service-link" href="painting.html">Explore service &amp; request an estimate →</a></article><article class="service" id="service-2"><h3>Cabinet Refinishing &amp; Painting</h3><p>Professional cabinet refinishing and painting for kitchens and baths.</p><a class="service-link" href="cabinets.html">Explore service &amp; request an estimate →</a></article><article class="service" id="service-3"><h3>Kitchen &amp; Bath Remodeling</h3><p>Tile, backsplashes, upgrades and interior transformations.</p><a class="service-link" href="remodeling.html">Explore service &amp; request an estimate →</a></article><article class="service" id="service-4"><h3>Flooring</h3><p>LVP and engineered flooring installation.</p><a class="service-link" href="flooring.html">Explore service &amp; request an estimate →</a></article><article class="service" id="service-5"><h3>Drywall Repair &amp; Texture</h3><p>Drywall repair, finishing and texture matching.</p><a class="service-link" href="drywall.html">Explore service &amp; request an estimate →</a></article><article class="service" id="service-6"><h3>Pressure Washing</h3><p>Driveways, walkways, pool decks and exterior surfaces.</p><a class="service-link" href="pressure-washing.html">Explore service &amp; request an estimate →</a></article><article class="service" id="service-7"><h3>Fence Staining &amp; Exterior Care</h3><p>Fence staining and exterior maintenance.</p><a class="service-link" href="repairs.html">Explore service &amp; request an estimate →</a></article><article class="service" id="service-8"><h3>Doors, Trim, Base &amp; Shiplap</h3><p>Door installation, trim, baseboards and decorative wall finishes.</p><a class="service-link" href="carpentry.html">Explore service &amp; request an estimate →</a></article><article class="service" id="service-9"><h3>Outdoor Kitchens &amp; Backsplash</h3><p>Outdoor kitchen finishes and backsplash installation.</p><a class="service-link" href="tile.html">Explore service &amp; request an estimate →</a></article><article class="service" id="service-10"><h3>Handyman Services &amp; Cosmetic Repairs</h3><p>Repairs, maintenance, punch lists and property turnovers.</p><a class="service-link" href="repairs.html">Explore service &amp; request an estimate →</a></article>
 </div></section>
-<section class="about" id="about"><h2>About Forrest Home Solutions</h2><p>Hi, I'm Justin. Forrest Home Solutions provides professional painting, remodeling, cabinet refinishing, flooring and handyman services for homeowners, property managers and realtors throughout Sarasota and Southwest Florida.</p><p>Serving Sarasota, Bradenton, Venice, North Port, Port Charlotte and surrounding communities — from Tampa to Fort Myers.</p></section><section class="more area-section" id="areas"><h2>Areas We Serve</h2><p>Sarasota • Bradenton • Siesta Key • Longboat Key • Venice • North Port • Port Charlotte • Punta Gorda • Tampa • Fort Myers and surrounding communities.</p><p>Not sure whether you're in our service area? <a href="tel:+19418791796">Call us</a> and ask.</p></section>
+<section class="about about-feature" id="about">
+<div class="about-feature-inner">
+<div class="about-portrait"><img src="justin.jpg" alt="Forrest Home Solutions owner Justin" loading="lazy"></div>
+<div class="about-info">
+<h2>About Forrest Home Solutions</h2>
+<p>Hi, I'm Justin. Forrest Home Solutions provides professional painting, remodeling, cabinet refinishing, flooring and handyman services for homeowners, property managers and realtors throughout Sarasota and Southwest Florida.</p>
+<p>Serving Sarasota, Bradenton, Venice, North Port, Port Charlotte and surrounding communities — from Tampa to Fort Myers.</p>
+<div class="about-contact-actions">
+<a href="tel:+19418791796">📞 Call (941) 879-1796</a>
+<a href="mailto:justin@forresthomesolutions.com">✉️ Email Us</a>
+<a href="https://forresthomesolutions.com">🌐 Visit Our Website</a>
+<a href="https://www.google.com/search?q=Forrest+Home+Solutions+Sarasota+Florida+Google+reviews" target="_blank" rel="noopener noreferrer">⭐ Google Reviews</a>
+</div>
+</div></div></section><section class="more area-section" id="areas"><h2>Areas We Serve</h2><p>Sarasota • Bradenton • Siesta Key • Longboat Key • Venice • North Port • Port Charlotte • Punta Gorda • Tampa • Fort Myers and surrounding communities.</p><p>Not sure whether you're in our service area? <a href="tel:+19418791796">Call us</a> and ask.</p></section>
 <section class="more reviews-section" id="reviews"><h2>Customer Reviews</h2><p>See what customers are saying about Forrest Home Solutions on Google.</p><a class="cta" href="https://www.google.com/search?q=Forrest+Home+Solutions+Sarasota+Florida+Google+reviews" rel="noopener noreferrer" target="_blank">Find Our Google Reviews</a></section>
 <section class="more before-after" id="before-after"><h2>Before &amp; After — Real Projects Only</h2><p>We're preparing matched before-and-after comparisons from our actual projects. Until each pair is verified, all of our original work photos remain available in the gallery above. No stock images or fabricated transformations.</p><div aria-live="polite" class="comparison-list" id="verified-comparisons"></div></section>
 <section class="more faq" id="faq"><h2>Frequently Asked Questions</h2>
