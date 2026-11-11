@@ -1,0 +1,20 @@
+FORREST HOME SOLUTIONS — COMPLETE WEBSITE PACKAGE
+
+This ZIP is a complete website, not an update-only ZIP. Unzip it first.
+The file index.html must be at the top level alongside CNAME, style.css, and the folders assets/, gallery-photos/, videos/.
+
+PREVIEW:
+Unzip the archive, then open index.html in a web browser. Some iPhone file previews may not fully run interactive JavaScript or autoplay video. For a reliable test, host the extracted files on a website or use a local web server.
+
+GITHUB PAGES:
+GitHub does NOT automatically extract ZIP archives. Do NOT upload this ZIP file as a single file to your GitHub repository. Upload the EXTRACTED website files and folders, preserving their paths. Keep CNAME for your custom domain.
+
+INCLUDED:
+Original site design and service pages, 40 actual project photos, 6 project videos, homepage video, clickable service links (including mobile), before/after slider functionality, estimate email form, reviews search link, floating call/text buttons, video filtering, service areas, FAQ.
+
+IMPORTANT LIMITATIONS:
+The estimate form prepares an email in the visitor's mail app. It does not submit to a server or accept photo uploads directly. Visitors can attach photos to their email before sending. To receive form submissions without an email app, a separate form service must be connected.
+The Google reviews button opens a Google search for the business, not a verified direct Google Business review URL.
+No before-and-after photo pairs have been assumed or fabricated. The comparison slider code is ready, but sliders will appear only when genuine matching photos are verified and entered in index.html.
+
+The live website has NOT been changed by preparing this package.
